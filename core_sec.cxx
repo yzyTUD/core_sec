@@ -78,6 +78,7 @@ public:
 	/// declare timer_event method to connect the shoot signal of the trigger
 	void timer_event(double, double dt)
 	{
+		std::cout << "timer called! " << std::endl;
 	}
 	/// setting the view transform yourself
 	void draw(context& ctx)

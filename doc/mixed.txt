@@ -1,0 +1,6 @@
+
+	encript files, dirs, disks 
+	mem inspector 
+	boosting cpu/ gpu 
+
+	
