@@ -1,0 +1,13 @@
+@=
+projectType="application_plugin";
+projectName="core_sec";
+projectGUID="997FE921-FAF7-4FD4-9A2C-D9EB79025F60";
+addProjectDirs=[CGV_DIR."/libs", CGV_DIR."/plugins", CGV_DIR."/3rd"];
+addIncDirs=[CGV_DIR."/libs", CGV_DIR."/libs/delaunay"];
+addProjectDeps=["cgv_utils", "cgv_type", "cgv_reflect", "cgv_data", "cgv_signal", "cgv_base", "cgv_media", "cgv_gui", 
+"cgv_render","cgv_os","fltk", "cgv_viewer","cg_fltk", "cg_ext", "crg_stereo_view", "crg_antialias", "crg_depth_of_field", 
+"crg_light", "cg_meta", "cmi_io","cmv_avi","crg_grid","co_web", "delaunay","cgv_gl", "glew","plot", "cg_gamepad"];
+addCommandLineArguments=[
+	'config:"'.CGV_DIR.'/plugins/examples/config.def"',
+	after("type(shader_config):shader_path='".INPUT_DIR.";".CGV_DIR."/libs/plot/glsl;".CGV_DIR."/libs/cgv_gl/glsl'","cg_fltk")
+];
